@@ -19,7 +19,7 @@ def send_course_info(message):
         bot.send_message(message.from_user.id, messages['javascript'], reply_markup=url_keyboard)
     elif message.text == '3️⃣ SMM':
         bot.send_message(message.from_user.id, messages['smm'], reply_markup=url_keyboard)
-    elif message.text == '4️⃣ Graphic design':
+    elif message.text == '4️⃣ Графический дизайн':
         bot.send_message(message.from_user.id, messages['graphic_design'], reply_markup=url_keyboard)
     elif message.text == '5️⃣ Wordpress':
         bot.send_message(message.from_user.id, messages['wordpress'], reply_markup=url_keyboard)
