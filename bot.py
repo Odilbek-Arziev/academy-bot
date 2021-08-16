@@ -1,14 +1,14 @@
 import telebot
-import config
+from bot_token import TOKEN
 from keyboards import *
 from messages import messages
 
-bot = telebot.TeleBot(config.TOKEN)
+bot = telebot.TeleBot(TOKEN)
 
 
 @bot.message_handler(commands=['start', 'help'])
 def start(message):
-    bot.send_message(message.from_user.id, messages['greeting'], reply_markup=courses_keyboard)
+    bot.send_message(message.from_user.id, messages['greetings'], reply_markup=courses_keyboard)
 
 
 @bot.message_handler(content_types='text')
